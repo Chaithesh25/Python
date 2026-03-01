@@ -22,3 +22,27 @@ plt.grid(True)
 
 
 plt.savefig("multipleplot")
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Create data
+x = np.linspace(-3, 3, 50)
+y = np.linspace(-3, 3, 50)
+X, Y = np.meshgrid(x, y)
+
+Z = np.sin(X**2 + Y**2)
+
+# Create contour plot
+plt.contourf(X, Y, Z)
+
+# Add color bar
+plt.colorbar(label="Z value")
+
+# Labels and title
+plt.title("Simple Contour Plot")
+plt.xlabel("X axis")
+plt.ylabel("Y axis")
+
+plt.savefig()
