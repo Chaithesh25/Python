@@ -1,20 +1,13 @@
-import numpy as np
-# array  = np.arange(1,17).reshape(4,4)
+import pandas as pd
 
-# print(array)
+data = {
+    'name': ['chaithesh','avin','asterb'],
+    'age':[20,34,22],
+    'number':[1,2,3]
+}
 
-# splite_array = np.array_split(array,2)
+df = pd.DataFrame(data)
 
-# print("\n",splite_array)
+print(df)
 
-
-# for i , splite_array in enumerate(splite_array,start=1):
-
-#     print(f"Array{i}",splite_array)
-
-x = np.array([[1],[2],[3]])
-y = np.array([10,20,30])
-print(x)
-print(y)
-
-print("broadcasted result = ",x+y)
+print("first row: ",df.head())

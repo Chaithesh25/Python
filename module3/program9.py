@@ -12,4 +12,4 @@ df = pd.DataFrame(data)
 
 # Display first few rows
 print("First few rows of the DataFrame:")
-print(df.head())
+print(df.head(1))
